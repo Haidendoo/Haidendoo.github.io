@@ -487,10 +487,16 @@ nav .fas{
    display: none;
 }
 @media only screen and (max-width:600px){
-#header{
-    /* Update placeholder image if needed */
-}
-.headertext{
+    #header{
+        /* Update placeholder image if needed */
+    }
+    .header-bg{
+        height: 50%;
+        right: -15%; /* Slight offset to right */
+        bottom: 20%;
+        opacity: 0.4; /* dim it for readability */
+    }
+    .headertext{
     margin-top: 100%;
     font-size: 16px;
 }
