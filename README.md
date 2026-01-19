@@ -19,7 +19,7 @@ Welcome to my responsive portfolio design project! This project showcases a mode
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/mazuong2k5toichoi/mazuong2k5toichoi.github.io.git`
+1. Clone the repository: `git clone https://github.com/Haidendoo/Haidendoo.github.io.git`
 2. Open the `index.html` file in a web browser to view the portfolio.
 
 ## Customization
