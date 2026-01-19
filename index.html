@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiden. Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon1.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/4c67651da0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href=""><h1><span class="r">H</span>aiden.</h1></a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p class="animate"> Data Engineer </p>
+                <h1>Hi, I'm <span id="name">Haiden</span><br> From HCMC,VietNam</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="abouttitle">About Me</h1>
+                    <p>
+                        Hey there, I'm Haiden. I specialize in Data Engineering and Ops, blending complex data flows with seamless automation.
+                        My focus lies in crafting resilient data ecosystems—optimizing everything from ingestion to deployment.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul class="experience-list">
+                            <li>
+                                <span class="role">Technical Skills</span>
+                                <ul class="job-description">
+                                    <li><strong>Languages:</strong> Python, C/C++, SQL, R.</li>
+                                    <li><strong>Databases:</strong> MySQL, PostgreSQL, SQL Server, MongoDB.</li>
+                                    <li><strong>Data Processing Tools:</strong> Spark, Pandas, dbt, Nifi, dlt.</li>
+                                    <li><strong>Visualizations:</strong> Power BI, Streamlit, Metabase.</li>
+                                    <li><strong>Orchestration:</strong> Dagster, Airflow, MLflow.</li>
+                                    <li><strong>Containerization and Version control:</strong> Docker, Git.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="role">Certifications</span>
+                                <ul class="job-description">
+                                    <li>Google Data Analytics Professional Certificate - Issued by Coursera.</li>
+                                    <li>Astronomer Airflow 3 Fundamentals - Issued by Astronomer.</li>
+                                    <li>SQL (Advanced) - Issued by Hackerrank.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul class="experience-list">
+                            <li>
+                                <span class="role">Data Engineer Intern</span>
+                                <div class="company-info">VNTT - Ho Chi Minh City, Vietnam</div>
+                                <div class="date-info">Nov 2025 – Jan 2026</div>
+                                <ul class="job-description">
+                                    <li>Designed and implemented a scalable real-time data ingestion framework using Apache NiFi and N8N; processed IoT sensor data streams and reduced pipeline latency by 50%.</li>
+                                    <li>Performed data cleaning, transformation, and load to MongoDB, then published processed data to MQTT for real-time insights and scalability.</li>
+                                    <li>Developed and deployed real-time energy forecasting models (Prophet, LightGBM) via MLflow, achieving a 10% MAPE.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="role">Analytics Engineer Intern</span>
+                                <div class="company-info">Global Insurance Company - Ho Chi Minh City, Vietnam</div>
+                                <div class="date-info">June 2025 - Sep 2025</div>
+                                <ul class="job-description">
+                                    <li>Designed and implemented robust daily reset pipelines for Claim Report using Fabric, resulting in a 30% reduction in pipeline runtime on Microsoft Fabric.</li>
+                                    <li>Rebuilt and optimized a dynamic Renew Report in Power BI, helping DA summarize the exposure, renewal rate and premium written in different territories.</li>
+                                    <li>Performed data cleaning, data modeling, transformation, and statistical analysis to support actuarial decision-making.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul class="experience-list">
+                            <li>
+                                <span class="role">Bachelor of Computer Science</span>
+                                <div class="company-info">University of Technology (VNU) - Ho Chi Minh City, Vietnam</div>
+                                <div class="date-info">Aug 2023 - Nov 2027</div>
+                                <ul class="job-description">
+                                    <li>Cumulative GPA: 3.6 / 4.0</li>
+                                    <li>Honors: 4 consecutive OISP scholarship for outstanding academic achievement.</li>
+                                    <li>Language: English (IELTS 7.0), Vietnamese (Native).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------services------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>🚀 Elevate your online presence with designs that captivate,
+                        engage, and leave a lasting impression. I am Rahul, a passionate
+                        web designer dedicated to transforming visions into visually
+                        stunning and functional digital experiences.</p>
+                        <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End Development</h2>
+                    <p>In frontend development, I specialize in crafting visually appealing and
+                        interactive web interfaces. Using HTML, CSS, and JavaScript, I create
+                        seamless user experiences. With a focus on responsive design and modern
+                        frameworks like React, I ensure efficient and captivating websites. Join
+                        me in the dynamic realm of frontend development for a visually impactful journey.</p>
+                        <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                        id molestias quia culpa minus nobis laborum! Magni a deserunt
+                        provident fugiat. Voluptatibus commodi nobis repellat corrupti
+                        maiores at, iure quis aspernatur labore atque reiciendis assumenda
+                        dignissimos deserunt, error natus repudiandae sed eum, temporibus tenetur dolorem.</p>
+                        <a href="#">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------portfolio--------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/st-db2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Student Database Management System</h3>
+                        <p>Developed a robust student database system, designing and
+                            implementing a structured schema to efficiently store and
+                            manage student information.</p>
+                            <a href="https://github.com/07Akashh/std-database.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfoliom-1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Responsive Design Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Unde magnam beatae aspernatur
+                            dolore ullam tempora ipsa delectus quae nobis debitis?</p>
+                            <a href="https://github.com/07Akashh/Responsive-PortFolioDesign.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/travel-blog1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Travel Blog Website Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Unde magnam beatae aspernatur
+                            dolore ullam tempora ipsa delectus quae nobis debitis?</p>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+<!-- -----------------------------contact--------------------------------------- -->
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tranhaidang07102005@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+84 8994 87105</p>
+                <div class="social-accounts">
+                    <a href="https://www.linkedin.com/in/haidenn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Haidendoo"><i class="fa-brands fa-github"></i></a>
+                    <!-- <a href="https://www.instagram.com/aonecreationss/"><i class="fa-brands fa-instagram"></i></a> -->
+                </div>
+                <a href="images/Rahul.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" id="" placeholder="Your E-mail" required>
+                    <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> &copy; Copyright,All Rights Reserved | Rahul</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-link");
+        var tabcontents=document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'paste-here-script-url'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
